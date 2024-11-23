@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img id="Logo" src="logo.webp" alt="logo">
+            <div class="header-info">
+                <h1>TODO SOBRE GIT</h1>
+                <p>Aprende los conceptos, comandos y buenas prácticas</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Menú principal</a></li>
+            <li class="submenu">
+                <a href="#comandos">Comandos</a>
+                <ul class="submenu-items">
+                    <li><a href="#init">Básicos</a></li>
+                    <li><a href="#add">Avanzados</a></li>
+                </ul>
+            </li>
+            <li><a href="#conclusion">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <section id="imagen" class="section-left">
+            <img id="Imagen" src="Imagen.png" alt="Imagen explicativa sobre Git">
+        </section>
+
+        <section class="section-right">
+            <div class="pregunta">
+                <strong>El significado detrás del nombre "Git"</strong>
+                <br><br>
+                <p>Linus Torvalds, creador de Git, nombró la herramienta como un juego de palabras. En inglés británico, "git" es un término coloquial que significa algo así como "idiota". Torvalds dijo en broma que él mismo es un "git egoísta" por crear esta herramienta.</p>
+            </div>
+            <div class="pregunta">
+                <strong>Un repositorio dentro de otro</strong>
+                <br><br>
+                <p>En Git puedes tener un repositorio dentro de otro usando submódulos. Esto se utiliza para proyectos que dependen de otros repositorios externos, permitiendo gestionarlos como parte del principal.</p>
+            </div>
+            <div class="pregunta">
+                <strong>El compromiso con la velocidad</strong>
+                <br><br>
+                <p>Git fue creado principalmente para ser rápido. De hecho, Linus diseñó la herramienta porque no estaba satisfecho con la velocidad de otros sistemas de control de versiones como BitKeeper, que usaba para el kernel de Linux.</p>
+            </div>
+            <div class="pregunta">
+                <strong>Git no almacena archivos de forma literal</strong>
+                <br><br>
+                <p>A diferencia de otros sistemas de control de versiones, Git no almacena los archivos en cada commit como copias completas. En su lugar, usa un sistema basado en snapshots, donde solo guarda las diferencias y un índice del estado completo en cada commit. Esto ahorra mucho espacio.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todo sobre Git. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

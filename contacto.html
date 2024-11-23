@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="header-container">
+            <img id="Logo" src="logo.webp" alt="logo">
+            <div class="header-info">
+                <h1>TODO SOBRE GIT</h1>
+                <p>Aprende los conceptos, comandos y buenas prácticas</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduccion">Menú principal</a></li>
+            <li class="submenu">
+                <a href="#comandos">Comandos</a>
+                <ul class="submenu-items">
+                    <li><a href="#init">Básicos</a></li>
+                    <li><a href="#add">Avanzados</a></li>
+                </ul>
+            </li>
+            <li><a href="#conclusion">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <section class="contact-form">
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                    </div>
+                </div>
+                <div class="form-group-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                    </div>
+                </div>
+                <div class="form-group-full">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todo sobre Git. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

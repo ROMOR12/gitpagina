@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre Git</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img id="Logo" src="logo.webp" alt="logo">
+            <div class="header-info">
+                <h1>Todo sobre Git</h1>
+                <p>Aprende los conceptos, comandos y buenas prácticas de Git</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Menú principal</a></li>
+            <li class="submenu">
+                <a href="#comandos">Comandos</a>
+                <ul class="submenu-items">
+                    <li><a href="basicos.html">Básicos</a></li>
+                    <li><a href="#add">Avanzados</a></li>
+                </ul>
+            </li>
+            <li><a href="#conclusion">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <section class="section">
+            <div class="pregunta">
+                <b>Deshacer un commit(perdiendo cambios):</b>
+                <p> Con reset --soft puedes deshcacer el ultimo commit realizado, pero mantiene los cambios en el área de staging. 
+                    En consola se ejecuta con el comando: <b>git reset --soft HEAD~1</b>
+                </p>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+
+            <div class="pregunta">
+                <b>Deshacer un commit(manteniendo cambios):</b>
+                <p> Con reset --soft puedes borrar el ultimo commit realizado y los cambios asocialdos a él.
+                    En consola se ejecuta con el comando: <b>git reset --hard HEAD~1</b>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+
+            <div class="pregunta">
+                <b>Branch:</b>
+                <p> Con branch puedes crear ramas, hacieno mas caminos que solo el principal, con -d puedes eliminar ramas, con -r puedes
+                    ver las raas remotas. En consola se ejecuta con el
+                    comando: <b>git branch "nombre de la rama"</b>
+                </p>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+
+            <div class="pregunta">
+                <b>Tag:</b>
+                <p> Con tag puedes crear una etiqueta. En consola se ejecuta con el
+                    comando: <b>git tag -a v1.0 -m "Versión 1.0" </b>
+                </p>
+                <p>Ademas si ponemos el comando: <b>git tag </b> veremos las etiquetas existentes</p>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+
+            <div class="pregunta">
+                <b>stash:</b>
+                <p> Con stash puedes guardas cambia que aun no se han corfirmado.
+                    En consola se ejecuta con el comando: <b>git merge stash</b>
+                </p>
+                <p>Hay varios parametros, como <b>Apply</b> para recuperar cambios guardados o <b>drop</b> para eliminar un stash</p>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+
+            <div class="pregunta">
+                <b>Rebase:</b>
+                <p> Con rebase puedes reaplicar commits de una rama sobre otra, creando un historia mas limpio.
+                    En consola se ejecuta con el comando: <b>git rebase "rama base"</b>
+                </p>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+
+            <div class="pregunta">
+                <b>Submodule:</b>
+                <p> Con submodule puedes añadir submodulos apunta a una confirmación específica en otro repositorio externo.
+                    En consola se ejecuta con el comando: <b>git submodule add "URL"</b>
+                </p>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+
+            <div class="pregunta">
+                <b>Blame:</b>
+                <p> Con Blame puedes monstrar línea por línea quién cambió cada parte del archivo.
+                    En consola se ejecuta con el comando: <b>git blame "archivo"</b>
+                </p>
+                <br>
+                <p><b>Hecho por Amanda Correas</b></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todo sobre Git. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
